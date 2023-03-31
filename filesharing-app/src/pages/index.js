@@ -1,11 +1,14 @@
 import { Inter } from "next/font/google";
+import Navbar from "./Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <h1>Welcome Next Js In My Computer...</h1>
+      <div>
+        <Navbar />
+      </div>
     </>
   );
 }

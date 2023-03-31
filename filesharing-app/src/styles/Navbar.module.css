@@ -1,0 +1,21 @@
+.navMainDiv {
+  border: 1px solid black;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.navHeading {
+  font-size: 20px;
+  color: #ffff;
+}
+
+.navSubDiv {
+  font-size: 20px;
+  display: flex;
+}
+.navSubDiv p {
+  color: #ffff;
+}
+
