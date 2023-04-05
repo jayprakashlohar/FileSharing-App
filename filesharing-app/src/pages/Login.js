@@ -8,12 +8,22 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 import Navbar from "./Navbar";
-import React from "react";
+import React, { useState } from "react";
 import { BiHide, BiShowAlt } from "react-icons/bi";
+import { loginUser } from "@/Redux/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Login = () => {
+  const [userData, setUserData] = useState({ email: "", password: "" });
+  const dispatch = useDispatch();
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow(!show);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    dispatch(loginUser(userData));
+  };
+
   return (
     <>
       <nav>
@@ -22,24 +32,29 @@ const Login = () => {
       <Box
         border="1px solid black "
         h="75vh"
-        w="35%"
         m="auto"
         mt="30px"
         p="20px"
         borderRadius="5px"
+        w={{ base: "90%", md: "40%", sm: "60%", lg: "35%" }}
       >
         <Heading textAlign="center" m="20px" fontFamily="cursive">
           Login here
         </Heading>
-        <form>
+        <form onSubmit={handleLogin}>
           <FormLabel fontFamily="cursive">Email </FormLabel>
           <Input
             type="email"
             placeholder="Enter your email"
             variant="flushed"
+            required
+            value={userData.email}
+            onChange={(e) => {
+              setUserData({ ...userData, email: e.target.value });
+            }}
           />
           <FormLabel mt="20px" fontFamily="cursive">
-            Password{" "}
+            Password
           </FormLabel>
 
           <InputGroup size="md">
@@ -48,6 +63,11 @@ const Login = () => {
               type={show ? "text" : "password"}
               placeholder="Enter password"
               variant="flushed"
+              required
+              value={userData.password}
+              onChange={(e) => {
+                setUserData({ ...userData, password: e.target.value });
+              }}
             />
             <InputRightElement width="4.5rem">
               <Button
@@ -81,13 +101,24 @@ const Login = () => {
             mt="25px"
             borderRadius="20px"
             fontWeight="bold"
+            background="black"
+            color="#ffff"
+            _hover={{ background: "black" }}
           >
             LOGIN
           </Button>
 
-          <p style={{ textAlign: "center", margin: "20px" }}>
+          <p
+            style={{
+              textAlign: "center",
+              margin: "20px",
+              fontFamily: "cursive",
+            }}
+          >
             Don't have an account?{" "}
-            <span style={{ fontWeight: "bold" }}>Sign up</span>
+            <span style={{ fontWeight: "bold", fontFamily: "cursive" }}>
+              Sign up
+            </span>
           </p>
         </form>
       </Box>
