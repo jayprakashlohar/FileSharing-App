@@ -63,7 +63,7 @@ export const uploadToServer =
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/upload",
+        "https://lord-file-share.glitch.me/api/upload",
         {
           name: name,
           fileType: fileType,
@@ -89,7 +89,7 @@ export const uploadToServer =
 export const getAllFiles = () => async (dispatch) => {
   dispatch(setLoading());
   try {
-    const res = await axios.get("http://localhost:8080/api/get", {
+    const res = await axios.get("https://lord-file-share.glitch.me/api/get", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("loginToken"),
       },
@@ -107,11 +107,14 @@ export const getSingleFile = (id) => async (dispatch) => {
   console.log("singileId", id);
   dispatch(setLoading());
   try {
-    const res = await axios.get(`http://localhost:8080/api/get/${id}`, {
-      headers: {
-        Authorization: "Bearer " + localStorage.getItem("loginToken"),
-      },
-    });
+    const res = await axios.get(
+      `https://lord-file-share.glitch.me/api/get/${id}`,
+      {
+        headers: {
+          Authorization: "Bearer " + localStorage.getItem("loginToken"),
+        },
+      }
+    );
 
     dispatch(getSingleFileSuccess(res.data));
   } catch (err) {
