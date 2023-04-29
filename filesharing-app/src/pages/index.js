@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Navbar from "./Navbar";
+import Upload from "./Upload";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <div>
         <Navbar />
+        <Upload />
       </div>
     </>
   );

@@ -1,9 +1,9 @@
 .navMainDiv {
-  border: 1px solid black;
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  align-items: center;
+  background-color: teal;
 }
 
 .navHeading {
@@ -19,3 +19,15 @@
   color: #ffff;
 }
 
+/* @media all and(min-width: 0px) and (max-width: 420px) {
+
+} */
+
+@media screen and (max-width: 400px) {
+  .navHeading {
+    font-size: 18px;
+  }
+  .navSubDiv {
+    font-size: 15px;
+  }
+}
