@@ -37,7 +37,7 @@ const DisplayFiles = () => {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/get/${id}`,
+        `https://lord-file-share.glitch.me/api/get/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("loginToken")}`,
