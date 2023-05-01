@@ -11,41 +11,41 @@
 - Redux Toolkit
 - Chakra UI
 
-### Screenshots
+## Screenshots
 
-##### Register User
+### Register User
 
 ![signup](./filesharing-app//src//assets/signup.png)
 
-##### Login User
+### Login User
 
 ![login](./filesharing-app//src//assets/login.png)
 
-##### Home
+### Home
 
 ![home](./filesharing-app//src//assets/home.png)
 
-##### Home Mobile Screen
+### Home Mobile Screen
 
 ![homeMobileScreen](./filesharing-app//src//assets/homeMobileScreen.png)
 
-##### All Files
+### All Files
 
 ![allfiles](./filesharing-app//src//assets/allfiles.png)
 
-##### All Flies Mobile Screen
+### All Flies Mobile Screen
 
 ![allfilesMobileScreen](./filesharing-app//src//assets/allfilesMobileScreen.png)
 
-##### Download File
+### Download File
 
 ![download](./filesharing-app//src//assets/download.png)
 
-##### Download File Mobile Screen
+### Download File Mobile Screen
 
 ![downloadFileMobileScrren](./filesharing-app//src//assets/downloadFileMobileScrren.png)
 
-##### Delete File
+### Delete File
 
 ![deleteFile](./filesharing-app//src//assets/deleteFile.png)
 
