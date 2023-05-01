@@ -1,6 +1,6 @@
-# Adobe Social Media App
+## Filesharing App
 
-### This project is a web application for managing user profiles and posts.
+### A file sharing app is a software application that allows users to share files, such as documents, images, videos, and audio, between different devices or users. These apps usually work by creating a cloud-based storage space where files can be uploaded and accessed by authorized users. The app can be accessed through a web browser or a dedicated mobile application, and files can be shared through email, social media, or direct links
 
 ## Technology used
 
@@ -11,46 +11,43 @@
 - Redux Toolkit
 - Chakra UI
 
-## Features
-
-- User management: Create, read, update, and delete user profiles
-- Post management: Create, read, update, and delete posts
-- Post analytics: View total number of posts and top 5 most liked posts
-- User analytics: View total number of users and top 5 most active users
-
 ### Screenshots
 
 ##### Register User
 
-![adobeSignup](./adobe-social-media-app/src/assets/adobeSignup.gif)
+![signup](./filesharing-app//src//assets/signup.png)
 
 ##### Login User
 
-![adobeLogin](./adobe-social-media-app/src/assets/adobeLogin.png)
+![login](./filesharing-app//src//assets/login.png)
 
-##### Post Lists
+##### Home
 
-![postList](./adobe-social-media-app/src/assets/postList.png)
+![home](./filesharing-app//src//assets/home.png)
 
-##### Create New Post
+##### Home Mobile Screen
 
-![createNewPost](./adobe-social-media-app/src/assets/createNewPost.png)
+![homeMobileScreen](./filesharing-app//src//assets/homeMobileScreen.png)
 
-##### Update Post
+##### All Files
 
-![updatePost](./adobe-social-media-app/src/assets/updatePost.png)
+![allfiles](./filesharing-app//src//assets/allfiles.png)
 
-##### User Lists
+##### All Flies Mobile Screen
 
-![userList](./adobe-social-media-app/src/assets/userList.png)
+![allfilesMobileScreen](./filesharing-app//src//assets/allfilesMobileScreen.png)
 
-##### User Lists - update user
+##### Download File
 
-![updateUser](./adobe-social-media-app/src/assets/updateUser.png)
+![download](./filesharing-app//src//assets/download.png)
 
-##### Analytics Page
+##### Download File Mobile Screen
 
-![analytics](./adobe-social-media-app/src/assets/analytics.png)
+![downloadFileMobileScrren](./filesharing-app//src//assets/downloadFileMobileScrren.png)
+
+##### Delete File
+
+![deleteFile](./filesharing-app//src//assets/deleteFile.png)
 
 ## Getting Started
 
@@ -64,14 +61,14 @@
 
 ## Usage
 
-Once you have the app running, you can use it to create, read, update, and delete user profiles and posts. You can also view post and user analytics on their respective pages.
+Once you have the app running, you can use it to store your file and download and delete your file .
 
 # Deployed Link
 
 ### Frontend
 
-https://adobe-social-media.netlify.app/
+https://filesharing-app.vercel.app/
 
 ### Backend
 
-https://long-rose-duck-robe.cyclic.app
+https://lord-file-share.glitch.me/
