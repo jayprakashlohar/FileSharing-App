@@ -1,6 +1,6 @@
 ## Filesharing App
 
-### A file sharing app is a software application that allows users to share files, such as documents, images, videos, and audio, between different devices or users. These apps usually work by creating a cloud-based storage space where files can be uploaded and accessed by authorized users. The app can be accessed through a web browser or a dedicated mobile application, and files can be shared through email, social media, or direct links
+### The File Sharing App allow user to Signup/Login & upload files from your device and protect them with a password. Sharing files is as simple as sharing a link, allowing others to access and download the file with ease.
 
 ## Technology used
 
@@ -10,6 +10,16 @@
 - React
 - Redux Toolkit
 - Chakra UI
+
+<h1> 🚀 Features </h1>
+<ul> 
+<li> Login/Signup User Account </li>
+<li> File upload </li>
+<li> Password protection for files </li> 
+<li> Sharing of file linkse </li>
+<li> Downloading of files using shared links </li> 
+<li> Deleting files </li> 
+</ul>
 
 ## Screenshots
 
