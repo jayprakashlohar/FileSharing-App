@@ -5,6 +5,7 @@ import {
   Heading,
   Input,
   useToast,
+  Spinner,
 } from "@chakra-ui/react";
 
 import Navbar from "./Navbar";
@@ -119,7 +120,17 @@ const Signup = () => {
                 bgGradient: "linear(to-r, red.500, yellow.500)",
               }}
             >
-              SIGN UP
+              {isLoading ? (
+                <Spinner
+                  thickness="2px"
+                  speed="0.65s"
+                  emptyColor="gray.200"
+                  color="blue.500"
+                  size="md"
+                />
+              ) : (
+                "SIGN UP"
+              )}
             </Button>
 
             <p

@@ -7,6 +7,7 @@ import {
   InputGroup,
   InputRightElement,
   useToast,
+  Spinner,
 } from "@chakra-ui/react";
 import Navbar from "./Navbar";
 import React, { useState } from "react";
@@ -134,7 +135,17 @@ const Login = () => {
                 bgGradient: "linear(to-r, red.500, yellow.500)",
               }}
             >
-              LOGIN
+              {isLoading ? (
+                <Spinner
+                  thickness="2px"
+                  speed="0.65s"
+                  emptyColor="gray.200"
+                  color="blue.500"
+                  size="md"
+                />
+              ) : (
+                "LOGIN"
+              )}
             </Button>
 
             <p
